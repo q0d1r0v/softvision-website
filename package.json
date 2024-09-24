@@ -1,0 +1,26 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "element-plus": "^2.8.3",
+    "lottie-web": "^5.12.2",
+    "nuxt": "^3.13.0",
+    "vue": "latest",
+    "vue-router": "latest"
+  },
+  "devDependencies": {
+    "@iconify/vue": "^4.1.2",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "sass": "^1.79.3",
+    "tailwindcss": "^3.4.12"
+  }
+}
