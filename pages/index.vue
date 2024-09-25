@@ -84,7 +84,7 @@ onMounted(() => {
   <div class="border-b border-[#40a0ff34]">
     <NavBar @go-to-component="goToComponent" />
   </div>
-  <div class="container m-auto">
+  <div class="container m-auto bg-white">
     <div class="md:p-0 p-6">
       <div class="top-side">
         <el-row
