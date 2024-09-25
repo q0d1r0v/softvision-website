@@ -16,7 +16,7 @@ const technologies = [
 </script>
 
 <template>
-  <div class="footer flex items-center justify-center">
+  <div class="footer flex items-center justify-center bg-white">
     <div class="w-full container m-auto">
       <el-row justify="space-between" class="pt-64 md:text-left p-6">
         <el-col :xs="24" :sm="12" :lg="6" :xl="4">
@@ -49,7 +49,7 @@ const technologies = [
       </el-row>
     </div>
   </div>
-  <div class="lg:px-[125px] text-center">
+  <div class="lg:px-[125px] text-center bg-white">
     © 2024 - Softvision. Barcha huquqlar himoyalangan
   </div>
 </template>

@@ -31,7 +31,7 @@ function goToComponent(key: string, is_mobile: boolean) {
 </script>
 
 <template>
-  <div class="p-container">
+  <div class="p-container bg-white">
     <div class="md:py-4 top-bar container m-auto">
       <div class="md:block hidden">
         <div class="flex items-center justify-between gap-6">
