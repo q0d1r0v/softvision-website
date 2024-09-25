@@ -138,14 +138,15 @@ onMounted(() => {
               iOS
             </div>
             <div class="mt-4 text-[16px]">
-              Softvision jamoasi Android platformasi uchun yuqori sifatli va
-              innovatsion mobil ilovalar yaratadi. Bizning mutaxassislarimiz
-              sizning biznesingizga moslashgan, tezkor va foydalanuvchi
-              ehtiyojlarini inobatga olgan ilovalarni ishlab chiqishga tayyor.
-              Android ilovalari keng doiradagi qurilmalarda barqaror ishlashini
-              ta'minlaymiz va zamonaviy texnologiyalar orqali maksimal
-              unumdorlikka erishamiz. Softvision bilan siz biznesingiz uchun
-              samarali va raqamli rivojlanish yo'lini topasiz!
+              Softvision IT kompaniyasi sifatida, iOS platformasi uchun sifatli
+              va funksional mobil ilovalar ishlab chiqamiz. Bizning jamoamiz iOS
+              dasturlarini yaratishda zamonaviy texnologiyalarni qo'llaydi va
+              foydalanuvchilar uchun mukammal tajriba taqdim etishga intiladi.
+              Ilovalaringiz tez, xavfsiz va doimiy ishlashini ta'minlash bilan
+              birga, ularning foydalanuvchilar talablariga mos ravishda
+              optimallashtirilishini kafolatlaymiz. Agar siz biznesingizni
+              raqamli platformada rivojlantirishni istasangiz, Softvision siz
+              uchun ajoyib yechim bo'ladi.
             </div>
             <div class="flex items-center justify-center mt-6 md:hidden">
               <img
@@ -188,15 +189,14 @@ onMounted(() => {
               Android
             </div>
             <div class="mt-4 text-[16px]">
-              Softvision IT kompaniyasi sifatida, iOS platformasi uchun sifatli
-              va funksional mobil ilovalar ishlab chiqamiz. Bizning jamoamiz iOS
-              dasturlarini yaratishda zamonaviy texnologiyalarni qo'llaydi va
-              foydalanuvchilar uchun mukammal tajriba taqdim etishga intiladi.
-              Ilovalaringiz tez, xavfsiz va doimiy ishlashini ta'minlash bilan
-              birga, ularning foydalanuvchilar talablariga mos ravishda
-              optimallashtirilishini kafolatlaymiz. Agar siz biznesingizni
-              raqamli platformada rivojlantirishni istasangiz, Softvision siz
-              uchun ajoyib yechim bo'ladi.
+              Softvision jamoasi Android platformasi uchun yuqori sifatli va
+              innovatsion mobil ilovalar yaratadi. Bizning mutaxassislarimiz
+              sizning biznesingizga moslashgan, tezkor va foydalanuvchi
+              ehtiyojlarini inobatga olgan ilovalarni ishlab chiqishga tayyor.
+              Android ilovalari keng doiradagi qurilmalarda barqaror ishlashini
+              ta'minlaymiz va zamonaviy texnologiyalar orqali maksimal
+              unumdorlikka erishamiz. Softvision bilan siz biznesingiz uchun
+              samarali va raqamli rivojlanish yo'lini topasiz!
             </div>
             <div class="flex items-center justify-center mt-6 md:hidden">
               <img
