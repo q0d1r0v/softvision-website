@@ -1,26 +1,44 @@
 <script setup lang="ts">
 import { Icon } from "@iconify/vue";
-import { ElDrawer } from "element-plus";
+const { locale, setLocale } = useI18n();
+import { onClickOutside } from "@vueuse/core";
+import { useI18n } from "vue-i18n";
 
-const links = [
+const { t } = useI18n();
+
+const links = computed(() => [
   {
-    name: "Bizning xizmatlar",
+    name: t("navbar.service"),
     key: "service",
   },
   {
-    name: "Innovatsion yechimlar",
+    name: t("navbar.logic"),
     key: "logic",
   },
   {
-    name: "Biz haqimizda",
+    name: t("navbar.about"),
     key: "about",
   },
   {
-    name: "Loyihalar",
+    name: t("navbar.projects"),
     key: "projects",
   },
-];
+]);
 const drawer = ref<boolean>(false);
+const languages = [
+  {
+    lang: "uz",
+  },
+  {
+    lang: "ru",
+  },
+  {
+    lang: "en",
+  },
+];
+const visible = ref(false);
+const second_visible = ref(false);
+const lang_container = ref(null);
 
 const emit = defineEmits(["go-to-component"]);
 
@@ -28,10 +46,20 @@ function goToComponent(key: string, is_mobile: boolean) {
   is_mobile && (drawer.value = false);
   emit("go-to-component", key);
 }
+function changeLang(lang: string) {
+  setLocale(lang);
+  visible.value = false;
+  second_visible.value = false;
+  drawer.value = false;
+}
+onClickOutside(lang_container, (event) => {
+  visible.value = false;
+  second_visible.value = false;
+});
 </script>
 
 <template>
-  <div class="p-container bg-white">
+  <div class="p-container">
     <div class="md:py-4 top-bar container m-auto">
       <div class="md:block hidden">
         <div class="flex items-center justify-between gap-6">
@@ -52,7 +80,54 @@ function goToComponent(key: string, is_mobile: boolean) {
             </div>
           </div>
           <div>
-            <el-button type="primary" plain size="large">Uz</el-button>
+            <ClientOnly>
+              <el-popover
+                placement="bottom"
+                :width="200"
+                trigger="click"
+                :visible="visible"
+              >
+                <template #reference>
+                  <el-button
+                    class="m-2"
+                    @click="visible = true"
+                    ref="lang_container"
+                    >{{
+                      locale === "uz"
+                        ? "Uz"
+                        : locale === "ru"
+                        ? "Ru"
+                        : locale === "en"
+                        ? "En"
+                        : ""
+                    }}</el-button
+                  >
+                </template>
+                <template #default>
+                  <div>
+                    <div
+                      v-for="language of languages"
+                      :class="
+                        language.lang === locale
+                          ? 'bg-[#409eff] text-white rounded mt-2 cursor-pointer select-none px-2 py-1'
+                          : 'hover:bg-[#409eff] hover:text-white rounded mt-2 cursor-pointer select-none px-2 py-1'
+                      "
+                      @click="changeLang(language.lang)"
+                    >
+                      {{
+                        language.lang === "uz"
+                          ? "Uz"
+                          : language.lang === "ru"
+                          ? "Ru"
+                          : language.lang === "en"
+                          ? "En"
+                          : ""
+                      }}
+                    </div>
+                  </div>
+                </template>
+              </el-popover>
+            </ClientOnly>
           </div>
         </div>
       </div>
@@ -92,7 +167,55 @@ function goToComponent(key: string, is_mobile: boolean) {
         </div>
       </div>
       <div class="mt-4">
-        <el-button type="primary" plain size="large">Uz</el-button>
+        <ClientOnly>
+          <el-popover
+            placement="bottom"
+            :width="200"
+            trigger="click"
+            :visible="second_visible"
+          >
+            <template #reference>
+              <el-button
+                class="m-2"
+                @click="second_visible = true"
+                ref="lang_container"
+              >
+                {{
+                  locale === "uz"
+                    ? "Uz"
+                    : locale === "ru"
+                    ? "Ru"
+                    : locale === "en"
+                    ? "En"
+                    : ""
+                }}
+              </el-button>
+            </template>
+            <template #default>
+              <div>
+                <div
+                  v-for="language of languages"
+                  :class="
+                    language.lang === locale
+                      ? 'bg-[#409eff] text-white rounded mt-2 cursor-pointer select-none px-2 py-1'
+                      : 'hover:bg-[#409eff] hover:text-white rounded mt-2 cursor-pointer select-none px-2 py-1'
+                  "
+                  @click="changeLang(language.lang)"
+                >
+                  {{
+                    language.lang === "uz"
+                      ? "Uz"
+                      : language.lang === "ru"
+                      ? "Ru"
+                      : language.lang === "en"
+                      ? "En"
+                      : ""
+                  }}
+                </div>
+              </div>
+            </template>
+          </el-popover>
+        </ClientOnly>
       </div>
     </div>
   </el-drawer>

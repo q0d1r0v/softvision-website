@@ -1,18 +1,20 @@
 <script setup lang="ts">
-const technologies = [
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
+const technologies = computed(() => [
   {
-    name: "iOS",
+    name: t("index.our_service.ios"),
   },
   {
-    name: "Android",
+    name: t("index.our_service.android"),
   },
   {
-    name: "Web development",
+    name: t("index.our_service.web"),
   },
   {
-    name: "Desktop development",
+    name: t("index.our_service.desktop"),
   },
-];
+]);
 </script>
 
 <template>
@@ -20,37 +22,45 @@ const technologies = [
     <div class="w-full container m-auto">
       <el-row justify="space-between" class="pt-64 md:text-left p-6">
         <el-col :xs="24" :sm="12" :lg="6" :xl="4">
-          <div class="text-[20px] font-semibold">Ijtimoiy tarmoq</div>
-          <div class="text-[16px] px-4 py-1 cursor-pointer select-none">
-            Linkedin
+          <div class="text-[20px] font-semibold">
+            {{ $t("footer.social_media") }}
           </div>
           <div class="text-[16px] px-4 py-1 cursor-pointer select-none">
-            Instagram
+            {{ $t("footer.linkedin") }}
           </div>
           <div class="text-[16px] px-4 py-1 cursor-pointer select-none">
-            Telegram
+            {{ $t("footer.instagram") }}
+          </div>
+          <div class="text-[16px] px-4 py-1 cursor-pointer select-none">
+            {{ $t("footer.telegram") }}
           </div>
         </el-col>
         <el-col :xs="24" :sm="12" :lg="6" :xl="4">
-          <div class="text-[20px] font-semibold md:m-0 mt-6">Xizmatlarimiz</div>
+          <div class="text-[20px] font-semibold md:m-0 mt-6">
+            {{ $t("footer.our_service") }}
+          </div>
           <div class="text-[16px] px-4 py-1" v-for="technology of technologies">
             {{ technology.name }}
           </div>
         </el-col>
         <el-col :xs="24" :sm="12" :lg="6" :xl="4">
-          <div class="text-[20px] font-semibold md:m-0 mt-6">Dasturlar</div>
+          <div class="text-[20px] font-semibold md:m-0 mt-6">
+            {{ $t("footer.software") }}
+          </div>
           <div class="text-[16px] px-4 py-1">Store master</div>
         </el-col>
         <el-col :xs="24" :sm="12" :lg="6" :xl="4">
-          <div class="text-[20px] font-semibold md:m-0 mt-6">Biz haqimizda</div>
-          <div class="text-[16px] px-4 py-1">Bog'lanish</div>
-          <div class="text-[16px] px-4 py-1">Jamoa</div>
+          <div class="text-[20px] font-semibold md:m-0 mt-6">
+            {{ $t("footer.about") }}
+          </div>
+          <div class="text-[16px] px-4 py-1">{{ $t("footer.connect") }}</div>
+          <div class="text-[16px] px-4 py-1">{{ $t("footer.group") }}</div>
         </el-col>
       </el-row>
     </div>
   </div>
   <div class="lg:px-[125px] text-center bg-white">
-    © 2024 - Softvision. Barcha huquqlar himoyalangan
+    {{ $t("footer.certificate") }}
   </div>
 </template>
 
@@ -59,8 +69,8 @@ const technologies = [
   width: 100%;
   min-height: 600px;
   background-image: url("../assets/footer-1.svg");
-  background-position: right top;
   background-repeat: no-repeat;
+  background-position: right top;
   background-size: cover;
   color: #fff;
 }

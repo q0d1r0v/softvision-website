@@ -1,7 +1,8 @@
+<script setup lang="ts"></script>
 <template>
   <div class="bg-[#409eff] text-white" id="scroll-container">
     <div id="scroll-text">
-      <div>Bog'lanish uchun telefon raqam: +998(99)999-99-99</div>
+      <div>{{ $t("top_title_bar") }}</div>
     </div>
   </div>
 </template>

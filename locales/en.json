@@ -1,0 +1,45 @@
+{
+    "top_title_bar": "Contact phone number: +998(99)999-99-99",
+    "navbar": {
+        "service": "Our Services",
+        "logic": "Innovative Solutions",
+        "about": "About Us",
+        "projects": "Projects"
+    },
+    "index": {
+        "main": {
+            "title": "Grow Your Business with Modern Automation Solutions!",
+            "text": "Empower your business with innovations! Efficiently manage your workflows through automation and save time. Our experienced team offers you modern solutions to ensure your competitiveness.",
+            "btn_text": "Contact Us"
+        },
+        "our_service": {
+            "title": "Our Services",
+            "ios": "iOS",
+            "info_of_ios": "As Softvision IT Company, we develop high-quality and functional mobile applications for the iOS platform. Our team utilizes modern technologies in creating iOS applications and strives to provide an excellent user experience. We ensure that your applications run quickly, securely, and continuously while being optimized according to user requirements. If you wish to develop your business on a digital platform, Softvision is an excellent solution for you.",
+            "android": "Android",
+            "info_of_android": "The Softvision team creates high-quality and innovative mobile applications for the Android platform. Our specialists are ready to develop applications tailored to your business needs, fast, and consider user requirements. We ensure that Android applications run smoothly across a wide range of devices and achieve maximum efficiency through modern technologies. With Softvision, you will find effective and digital growth paths for your business!",
+            "web": "Web Development",
+            "info_of_web_development": "As Softvision IT Company, we create quality and modern websites to lead your business to online success. Our web development services combine efficiency, speed, and user experience. Our specialists develop websites tailored to your needs and goals, ensuring they work excellently on both mobile and desktop devices. Whether it's e-commerce, corporate sites, or complex web applications – the Softvision team is ready to execute any project with high quality!",
+            "desktop": "Desktop Development",
+            "info_of_desktop_development": "The Softvision team specializes in developing powerful and efficient desktop applications for your business. We create fast and stable applications that provide a high level of user experience on Windows, macOS, and Linux platforms. Our desktop applications are designed to automate your workflows, increase productivity, and ensure data security. If your business needs custom solutions, Softvision offers you reliable and innovative software.",
+            "innovation_title": "Innovative Solutions",
+            "innovation_text": "As Softvision IT Company, we elevate your business to a new level through innovative solutions. Our specialists develop tailored digital solutions for your business using modern technologies and advanced programming techniques. Through innovation, you can automate processes, increase productivity, and discover new opportunities. Working with Softvision means progressing with future technologies!",
+            "about_title": "About Us",
+            "about_text": "Softvision is an IT company providing modern software solutions for entrepreneurs. Our main goal is to create effective and innovative software for our clients by automating business processes and accelerating digital development. Our team consists of highly qualified specialists with extensive experience in various fields. For each project, we deeply understand the client's needs and offer optimal solutions. With Softvision, you will have access to reliable, stable, and advanced technology-based software solutions.",
+            "projects_title": "Projects",
+            "projects_text": "The StoreMaster application developed by Softvision is a professional and modern solution for your retail business. With StoreMaster, you can efficiently manage inventory, customer interactions, sales, and stock control all in one place. The application also fully automates cash management, simplifying the sales process and reducing errors. You will manage your business more effectively with the ability to monitor cash operations, analyze reports, and track financial indicators in real-time. With a fast, secure, and intuitive interface, StoreMaster takes your business to the next level. Do you want to automate sales and cash management? StoreMaster can be a great solution for you!"
+        }
+    },
+    "footer": {
+        "our_service": "Our Services",
+        "social_media": "Social Media",
+        "linkedin": "LinkedIn",
+        "instagram": "Instagram",
+        "telegram": "Telegram",
+        "software": "Software",
+        "about": "About Us",
+        "connect": "Contact",
+        "group": "Team",
+        "certificate": "© 2024 - Softvision. All rights reserved."
+    }
+}
