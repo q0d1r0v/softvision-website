@@ -1,21 +1,33 @@
 <script setup lang="ts">
 import { Icon } from "@iconify/vue";
 import { ElDrawer } from "element-plus";
+
 const links = [
   {
     name: "Bizning xizmatlar",
+    key: "service",
   },
   {
     name: "Innovatsion yechimlar",
+    key: "logic",
   },
   {
     name: "Biz haqimizda",
+    key: "about",
   },
   {
     name: "Loyihalar",
+    key: "projects",
   },
 ];
 const drawer = ref<boolean>(false);
+
+const emit = defineEmits(["go-to-component"]);
+
+function goToComponent(key: string, is_mobile: boolean) {
+  is_mobile && (drawer.value = false);
+  emit("go-to-component", key);
+}
 </script>
 
 <template>
@@ -34,6 +46,7 @@ const drawer = ref<boolean>(false);
             <div
               v-for="menu of links"
               class="cursor-pointer hover:text-[#409eff] transition-all text-[16px]"
+              @click="goToComponent(menu.key, false)"
             >
               {{ menu.name }}
             </div>
@@ -73,6 +86,7 @@ const drawer = ref<boolean>(false);
         <div
           v-for="menu of links"
           class="cursor-pointer hover:text-[#409eff] transition-all text-[16px] mt-2"
+          @click="goToComponent(menu.key, true)"
         >
           {{ menu.name }}
         </div>

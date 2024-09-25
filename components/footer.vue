@@ -18,12 +18,18 @@ const technologies = [
 <template>
   <div class="footer flex items-center justify-center">
     <div class="w-full container m-auto">
-      <el-row justify="space-between" class="pt-64 md:text-left text-center">
+      <el-row justify="space-between" class="pt-64 md:text-left p-6">
         <el-col :xs="24" :sm="12" :lg="6" :xl="4">
           <div class="text-[20px] font-semibold">Ijtimoiy tarmoq</div>
-          <div class="text-[16px] px-4 py-1">Linkedin</div>
-          <div class="text-[16px] px-4 py-1">Instagram</div>
-          <div class="text-[16px] px-4 py-1">Telegram</div>
+          <div class="text-[16px] px-4 py-1 cursor-pointer select-none">
+            Linkedin
+          </div>
+          <div class="text-[16px] px-4 py-1 cursor-pointer select-none">
+            Instagram
+          </div>
+          <div class="text-[16px] px-4 py-1 cursor-pointer select-none">
+            Telegram
+          </div>
         </el-col>
         <el-col :xs="24" :sm="12" :lg="6" :xl="4">
           <div class="text-[20px] font-semibold md:m-0 mt-6">Xizmatlarimiz</div>
