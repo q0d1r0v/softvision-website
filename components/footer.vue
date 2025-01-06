@@ -60,7 +60,7 @@ const technologies = computed(() => [
     </div>
   </div>
   <div class="lg:px-[125px] text-center bg-white">
-    {{ $t("footer.certificate") }}
+    © {{new Date().getFullYear()}} {{ $t("footer.certificate") }}
   </div>
 </template>
 
