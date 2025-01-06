@@ -285,18 +285,18 @@ onMounted(() => {
         {{ $t("index.our_service.about_text") }}
       </div>
 
-      <div
+      <!-- <divk
         class="lg:mt-[120px] lg:text-[36px] text-[22px] mt-[54px] text-center text-[#409eff]"
         ref="projects"
       >
         {{ $t("index.our_service.projects_title") }}
-      </div>
+      </divk>
       <div
         class="md:text-left text-center lg:mt-[60px] mt-[40px] border rounded-md p-8 border-[#40a0ff60] select-none"
       >
         <span class="font-semibold">"StoreMaster":</span
         >{{ $t("index.our_service.projects_text") }}
-      </div>
+      </div> -->
     </div>
   </div>
   <div>
